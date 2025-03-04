@@ -23,11 +23,11 @@ const Header = () => {
   }, [open]);
 
   return (
-    <div className="position-relative w-100 d-flex justify-content-between align-items-center nav-parent">
+    <div className="position-relative w-100 nav-parent d-flex justify-content-between align-items-center">
       <Link href="#" className="position-absolute nav-logo">
         <Image
           src="/assets/images/webp/logo.webp"
-          alt="logo"
+          alt="page-logo"
           width={355}
           height={84}
         />
@@ -48,7 +48,7 @@ const Header = () => {
               {obj.title}
             </Link>
           ))}
-          <div className="d-flex gap-3">
+          <div className="d-flex gap-18">
             {SOCIAL_ICON_LIST.map((obj, i) => (
               <Link key={i} href={obj.link} target="_blank" className="icon">
                 {obj.icon}

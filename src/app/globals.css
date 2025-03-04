@@ -53,7 +53,7 @@ body {
   margin-top: 43px !important;
 }
 
-.pt-11 {
+.hero-heading {
   padding-top: 11px !important;
 }
 
@@ -63,6 +63,11 @@ body {
   background-color: white;
   transition: all 300ms linear;
   transform-origin: center;
+}
+
+.hero-heading-border {
+  border-top: 1px solid #3586ff;
+  width: 164px !important;
 }
 
 .open {
@@ -116,7 +121,11 @@ body {
 }
 
 .max-w-lg {
-  max-width: 911px !important;
+  max-width: 938px !important;
+}
+
+.gap-18{
+  gap: 18px !important;
 }
 
 .max-w-extra {
@@ -145,8 +154,12 @@ body {
 
 .custom-light-sky {
   background-color: #245aab !important;
+  transition: transform 0.3s ease !important;
 }
 
+.custom-light-sky:hover {
+  transform: scale(1.1) !important;
+}
 .team-custom-border {
   border: 1px solid #3586ff !important;
   width: 164px;
@@ -184,7 +197,6 @@ body {
 .icon:hover {
   transform: scale(1.2);
 }
-
 
 @media (max-width: 767.98px) {
   .nav-logo img {
@@ -316,37 +328,6 @@ body {
   }
 }
 
-@media (max-width: 769.99px) {
-  .pt-md {
-    padding-top: 16px !important;
-  }
-
-  .team-custom-border {
-    margin-top: 0px !important;
-  }
-
-  .custom-pt-36 {
-    padding-top: 24px !important;
-  }
-
-  .custom-pt-23 {
-    padding-top: 16px !important;
-  }
-
-  .story-image {
-    margin-top: 48px !important;
-  }
-
-  .size-base {
-    height: 180px;
-    width: 180px;
-  }
-
-  .h-base {
-    height: 300px;
-  }
-}
-
 @media (max-width: 849.99px) {
   .d-custom-none {
     display: none;
@@ -380,8 +361,50 @@ body {
   .hero-button {
     margin-top: 24px !important;
   }
+
   .story-image {
     margin-top: 56px !important;
-    height: auto !important;
+    max-height: 350px !important;
+  }
+
+  .custom-heading-font {
+    font-size: 30px !important;
+  }
+  .hero-main-heading {
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 769.99px) {
+  .pt-md {
+    padding-top: 16px !important;
+  }
+
+  .team-custom-border {
+    margin-top: 0px !important;
+  }
+
+  .custom-pt-36 {
+    padding-top: 24px !important;
+  }
+
+  .custom-pt-23 {
+    padding-top: 16px !important;
+  }
+
+  .story-image {
+    margin-top: 48px !important;
+  }
+
+  .size-base {
+    height: 180px;
+    width: 180px;
+  }
+
+   .hero-main-heading {
+    font-size: 36px !important;
+  }
+  .hero-heading-border{
+    width: 100px !important;
   }
 }
