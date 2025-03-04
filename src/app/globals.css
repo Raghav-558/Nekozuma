@@ -1,42 +1,387 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Franklin Gothic Heavy";
+  src: url("/assets/font/FranklinGothic-Heavy.otf");
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
+  margin: 0 !important;
+  padding: 0 !important;
   text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1c2430 !important;
+}
+
+.font-franklin {
+  font-family: "franklin", sans-serif;
+}
+
+.media-icon {
+  width: 24px;
+}
+
+.max-w-1920 {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0px 16px !important;
+}
+
+.pt-31 {
+  padding-top: 31px !important;
+}
+
+.custom-pt-36 {
+  padding-top: 36px !important;
+}
+
+.custom-pt-23 {
+  padding-top: 23px !important;
+}
+
+.story-image {
+  margin-top: 56px !important;
+  height: 537px !important;
+}
+
+.hero-button {
+  margin-top: 43px !important;
+}
+
+.pt-11 {
+  padding-top: 11px !important;
+}
+
+.toggle-button {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  transition: all 300ms linear;
+  transform-origin: center;
+}
+
+.open {
+  transform: translateY(4px) rotate(50deg);
+}
+
+.open-two {
+  transform: translateY(-5px) rotate(-50deg);
+}
+
+.nav-parent {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  top: 0;
+  left: 0;
+}
+
+.nav-logo img {
+  max-width: 371px;
+  height: 81px;
+}
+
+.nav-link-parent {
+  gap: 32px;
+  padding-top: 31px;
+}
+
+.nav-link {
+  font-size: 16px;
+  line-height: 130%;
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  bottom: -2px;
+  left: 0;
+  transition: width 300ms ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.max-w-lg {
+  max-width: 911px !important;
+}
+
+.max-w-extra {
+  max-width: 912px !important;
+}
+
+.hero-max-width {
+  max-width: 1920px;
+}
+
+.hero-padding {
+  padding: 195px 0px 140px 0px !important;
+}
+
+.text-custom-xs {
+  font-size: 14px !important;
+}
+
+.custom-blue {
+  color: #3586ff !important;
+}
+
+.custom-light-blue {
+  color: #d4e5ff !important;
+}
+
+.custom-light-sky {
+  background-color: #245aab !important;
+}
+
+.team-custom-border {
+  border: 1px solid #3586ff !important;
+  width: 164px;
+  margin-top: 13px !important;
+}
+
+.size-lg-xxl {
+  height: 400px;
+  width: 400px;
+}
+
+.size-xl {
+  height: 54px;
+  width: 230px;
+}
+
+.max-w-max {
+  max-width: max-content !important;
+}
+
+.px-sm {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.footer-parent {
+  padding: 46px 16px 47px 16px !important;
+  background-color: #245aab !important;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 767.98px) {
+  .nav-logo img {
+    width: 270px;
+    height: 70px;
+  }
+
+  .nav-link-parent {
+    gap: 20px;
+    background-color: #245aab !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    transition: all 300ms linear;
+  }
+}
+
+@media (min-width: 770px) {
+  .pt-md {
+    padding-top: 29px !important;
+  }
+
+  .size-xl {
+    height: 83px;
+    width: 424px;
+  }
+
+  .max-w-large {
+    max-width: 502px !important;
+  }
+
+  .size-lg {
+    height: 200px;
+    width: 140px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .text-lg-5xl {
+    font-size: 64px !important;
+    line-height: 72px !important;
+  }
+
+  .pt-lg-xs {
+    padding-top: 11px !important;
+  }
+
+  .pb-lg-xxl {
+    padding-bottom: 43px !important;
+  }
+
+  .size-lg-xxl {
+    height: 557px;
+    width: 557px;
+  }
+
+  .size-lg {
+    height: 280px;
+    width: 211px;
+  }
+
+  .size-base {
+    height: 320px;
+    width: 320px;
+  }
+
+  .size-custom {
+    width: 202px;
+    height: 202px;
+  }
+
+  .text-3xl {
+    font-size: 43px;
+    line-height: 48.75px;
+  }
+
+  .h-base {
+    height: 357px;
+  }
+}
+
+@media (max-width: 639.99px) {
+  .text-xs {
+    font-size: 14px !important;
+  }
+
+  .gap-sm {
+    gap: 12px;
+  }
+
+  .size-xl {
+    height: 44px;
+    width: 140px;
+  }
+
+  .pt-md {
+    padding-top: 8px !important;
+  }
+
+  .gap-md {
+    gap: 12px !important;
+  }
+
+  .team-custom-border {
+    width: 80px;
+  }
+
+  .size-base {
+    height: 130px;
+    width: 130px;
+  }
+
+  .h-base {
+    height: 200px;
+  }
+
+  .story-image {
+    height: 200px !important;
+  }
+
+  .size-custom {
+    height: 200px;
+  }
+
+  .footer-lights {
+    height: 80px !important;
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 769.99px) {
+  .pt-md {
+    padding-top: 16px !important;
+  }
+
+  .team-custom-border {
+    margin-top: 0px !important;
+  }
+
+  .custom-pt-36 {
+    padding-top: 24px !important;
+  }
+
+  .custom-pt-23 {
+    padding-top: 16px !important;
+  }
+
+  .story-image {
+    margin-top: 48px !important;
+  }
+
+  .size-base {
+    height: 180px;
+    width: 180px;
+  }
+
+  .h-base {
+    height: 300px;
+  }
+}
+
+@media (max-width: 849.99px) {
+  .d-custom-none {
+    display: none;
+  }
+
+  .hero-padding {
+    padding: 80px 0px 48px 0px !important;
+  }
+
+  .size-base {
+    height: 250px;
+    width: 250px;
+  }
+
+  .size-custom {
+    width: 100%;
+    height: 150px;
+  }
+
+  .footer-parent {
+    padding: 48px 16px 48px 16px !important;
+  }
+
+  .footer-lights {
+    height: 100px !important;
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 1025.98px) {
+  .hero-button {
+    margin-top: 24px !important;
+  }
+  .story-image {
+    margin-top: 56px !important;
+    height: auto !important;
   }
 }
