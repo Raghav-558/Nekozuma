@@ -9,7 +9,7 @@ const Hero = () => {
         <Header />
         <div className="container px-3 max-w-extra hero-padding mx-auto">
           <div className="hero-heading-border mb-1"></div>
-          <h1 className="custom-blue sm-text-white font-franklin text-lg-5xl text-3xl hero-main-heading">
+          <h1 className="custom-blue sm-text-white font-franklin text-3xl hero-main-heading">
             NEKOZUMA
           </h1>
           <p className="max-w-large pt-lg-xs hero-heading fw-6 text-xs lh-sm custom-light-blue">
@@ -34,7 +34,7 @@ const Hero = () => {
           alt="lightning"
           width={211}
           height={350}
-          className="position-absolute bottom-0 size-lg start-0  display-none pe-none"
+          className="position-absolute bottom-0 hero-left-vector start-0 display-none pe-none"
         />
       </div>
     </div>
