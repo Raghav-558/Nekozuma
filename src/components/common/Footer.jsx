@@ -23,10 +23,10 @@ const Footer = () => {
       <h2 className="text-center text-white footer-heading">NEKOZUMA</h2>
       <div className="d-flex justify-content-center align-items-center mt-4 gap-4">
         <Link href={"https://discord.com/"} target="_blank" className="icon">
-          <DiscordIcon />
+          <DiscordIcon myClass={"footer-discord-icon"} />
         </Link>
         <Link href={"https://x.com/?lang=en"} target="_blank" className="icon">
-          <TwitterIcon />
+          <TwitterIcon  myClass={"footer-twitter-icon"}/>
         </Link>
       </div>
     </div>

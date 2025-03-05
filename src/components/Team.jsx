@@ -23,7 +23,7 @@ const Team = () => {
                   height={202}
                   className=" mx-auto pe-none w-100 d-flex object-fit-cover"
                 />
-                <p className="fs-4 custom-blue text-center font-franklin fw-bold pt-2 pt-lg-4 pb-lg-2">
+                <p className="fs-4 custom-blue text-center font-franklin pt-2 pt-lg-4 pb-lg-2">
                   {obj.title}
                 </p>
                 <Description
@@ -36,9 +36,9 @@ const Team = () => {
                 />
                 <Link
                   href={obj.link}
-                  className="mx-auto max-w-max d-flex icon pt-2"
+                  className="mx-auto max-w-max d-flex pt-2"
                 >
-                  <TwitterIcon myClass={"size-sm"} />
+                  <TwitterIcon myClass={"twitter-icon"} />
                 </Link>
               </div>
             </div>
