@@ -48,7 +48,7 @@ const Header = () => {
               {obj.title}
             </Link>
           ))}
-          <div className="d-flex gap-18">
+          <div className="d-flex header-icon-gap">
             {SOCIAL_ICON_LIST.map((obj, i) => (
               <Link key={i} href={obj.link} target="_blank" className="icon">
                 {obj.icon}

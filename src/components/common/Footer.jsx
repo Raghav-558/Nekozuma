@@ -20,13 +20,17 @@ const Footer = () => {
         height={174}
         className=" position-absolute bottom-0 end-0 pointer-event-none footer-lights"
       />
-      <h2 className="text-center text-white footer-heading">NEKOZUMA</h2>
+      <Link href={"#"}>
+        <h2 className="text-center text-white font-franklin text-decoration-none footer-heading">
+          NEKOZUMA
+        </h2>
+      </Link>
       <div className="d-flex justify-content-center align-items-center mt-4 gap-4">
         <Link href={"https://discord.com/"} target="_blank" className="icon">
           <DiscordIcon myClass={"footer-discord-icon"} />
         </Link>
         <Link href={"https://x.com/?lang=en"} target="_blank" className="icon">
-          <TwitterIcon  myClass={"footer-twitter-icon"}/>
+          <TwitterIcon myClass={"footer-twitter-icon"} />
         </Link>
       </div>
     </div>

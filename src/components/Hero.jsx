@@ -27,14 +27,14 @@ const Hero = () => {
           alt="hero"
           width={557}
           height={557}
-          className="position-absolute bottom-0 end-0 size-lg-xxl d-custom-none pe-none"
+          className="position-absolute bottom-0 end-0 hero-cat-image display-none pe-none"
         />
         <Image
           src={"/assets/images/webp/hero-white-left.webp"}
           alt="lightning"
           width={211}
           height={350}
-          className="position-absolute bottom-0 size-lg start-0 size-lg-xxl d-custom-none pe-none"
+          className="position-absolute bottom-0 size-lg start-0  display-none pe-none"
         />
       </div>
     </div>
