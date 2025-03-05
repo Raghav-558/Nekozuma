@@ -60,9 +60,11 @@ const Header = () => {
           onClick={() => setOpen(!open)}
           className="w-100 d-flex gap-2 flex-column d-md-none justify-content-center align-items-end w-100 z-3"
         >
-          <span className={`toggle-button ${open ? "open" : "close"}`}></span>
           <span
-            className={`toggle-button ${open ? "open-two" : "close"}`}
+            className={`toggle-button ${open ? "cross-icon-one" : "close"}`}
+          ></span>
+          <span
+            className={`toggle-button ${open ? "cross-icon-two" : "close"}`}
           ></span>
         </div>
       </div>

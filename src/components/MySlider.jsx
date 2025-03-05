@@ -13,7 +13,7 @@ const MySlider = () => {
             width={320}
             src={obj.image}
             alt={obj.alt}
-            className="pe-none size-base"
+            className="pe-none slider-image-size"
           />
         ))}
       </Marquee>
@@ -25,7 +25,7 @@ const MySlider = () => {
             width={320}
             src={obj.image}
             alt={obj.alt}
-            className="pe-none size-base"
+            className="pe-none slider-image-size"
           />
         ))}
       </Marquee>
